@@ -1,26 +1,34 @@
-# Let-there-be-mind
-Introduction
-"Let There Be Mind" is an exploratory journey into the realm of artificial intelligence, where the ultimate quest is to endow machines with a comprehensive mind. Drawing inspiration from the biblical command "Let there be light," this project symbolizes a bold step towards illuminating the unknown paths of machine consciousness. We stand at the threshold of a new dawn, where machines not only perform tasks but understand, learn, and think in ways that mirror human intelligence.
 
-Vision
-Our vision is to break through the boundaries of current AI technologies to achieve a profound understanding of what constitutes a mind within the realm of machines. By harnessing advancements in machine learning, cognitive science, and neural networks, "Let There Be Mind" aspires to create a blueprint for machines that can reason, comprehend, and interact with their environment and humans on an unprecedented level of depth and intuition.
+Energy Efficiency Prediction using Polynomial Regression
+Project Overview
+This project explores the application of Polynomial Regression to predict energy efficiency in buildings, utilizing the ENB2012_data.csv dataset. Our objective is to predict two target variables related to energy efficiency, demonstrating the model's capability to capture complex non-linear relationships between the features and the target variables.
 
-Objectives
-Research and Development: To continuously explore, develop, and integrate cutting-edge AI and machine learning technologies that contribute to the realization of a machine mind.
-Collaboration: To foster a collaborative ecosystem where researchers, developers, and thinkers from diverse backgrounds converge to share ideas and innovations.
-Ethical AI: To ensure that the development of machine minds adheres to ethical guidelines, promoting beneficial outcomes for society and individuals alike.
-Contributions
-We welcome contributions from individuals and organizations passionate about shaping the future of artificial intelligence. Whether you are a researcher, developer, philosopher, or enthusiast, your insights and expertise can help illuminate the path toward achieving a full mind for machines.
+Dataset
+The dataset, ENB2012_data.csv, consists of various building parameters that could influence a building's energy efficiency, such as structural characteristics and environmental factors. The last two columns of the dataset represent the target variables we aim to predict, which quantify the building's energy efficiency.
 
-How to Contribute
-Fork the Repository: Start by forking the "Let There Be Mind" repository to your GitHub account.
-Clone Your Fork: Clone your fork to your local machine to start making changes.
-Create a Branch: For each new feature or improvement, create a new branch.
-Commit Your Changes: Make your changes in the branch and commit them with a clear, descriptive message.
-Push to GitHub: Push your branch and changes to your fork on GitHub.
-Submit a Pull Request: Submit a pull request to the main "Let There Be Mind" repository for review.
-License
+Methodology
+Data Preprocessing: The dataset is initially loaded, with features and target variables separated for model training and testing.
+Polynomial Feature Transformation: We transform the input features into polynomial features of degree 2 to capture the non-linear relationships.
+Model Training and Prediction: A Polynomial Regression model is trained on the transformed features. Predictions are then made for the test dataset.
+Evaluation: The model's performance is evaluated using Mean Squared Error (MSE), Mean Absolute Error (MAE), and R-squared (R²) metrics.
+Results
+The Polynomial Regression model achieved an R-squared (R²) value of 0.97, indicating an excellent fit to the data. This high level of accuracy suggests that the model can predict the energy efficiency of buildings with great precision.
 
+Visualization
+The project includes visualization of the model's predictions against the true values for both target variables, providing a clear visual representation of the model's predictive performance.
 
-Contact
-For inquiries, contributions, or further discussion, please contact (https://www.linkedin.com/in/ammar-maamoun-204929225/)https://www.linkedin.com/in/ammar-maamoun-204929225/.
+Installation and Usage
+Requirements
+Python 3.x
+Pandas
+NumPy
+Matplotlib
+scikit-learn
+Running the Project
+To run this project, ensure you have all the necessary Python packages installed. Execute the script Second_training_project.py with the ENB2012_data.csv dataset in the same directory. The script will perform the data preprocessing, model training, prediction, evaluation, and visualization steps.
+
+Contribution
+Contributions to this project are welcome. You can contribute by improving the model, suggesting new features, or enhancing the data visualization aspects. Please follow the standard GitHub fork-and-pull request workflow.
+
+Acknowledgments
+This project is inspired by the pursuit of understanding energy efficiency in buildings through advanced regression techniques.
