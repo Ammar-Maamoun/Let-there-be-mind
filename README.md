@@ -1,5 +1,4 @@
 
-For your project that achieved perfect classification on the iris.csv dataset using Logistic Regression, reflected by a confusion matrix with no misclassifications and an accuracy score of 1.0, here's a README file tailored to showcase this achievement:
 
 Iris Species Classification using Logistic Regression
 Introduction
