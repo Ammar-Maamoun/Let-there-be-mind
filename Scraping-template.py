@@ -10,7 +10,7 @@ import time
 import random
 import csv
 
-print("✅ All libraries installed correctly!")
+print(" All libraries installed correctly!")
 
 # --- prepare CSV file ---
 csv_filename = "yellowpages_results.csv"
@@ -68,7 +68,7 @@ for page_num in range(1, 6):  # <-- change 6 to number of pages you want
         if ("attention required" in title.lower() or 
             "sorry, you have been blocked" in page_source_lower or 
             "please enable cookies" in page_source_lower):
-            print(f"⚠️ Cloudflare/Block detected on page {page_num} (title: {title}). Saving snapshot and backing off.")
+            print(f" Cloudflare/Block detected on page {page_num} (title: {title}). Saving snapshot and backing off.")
             filename = f"page_{page_num}_blocked.html"
             with open(filename, "w", encoding="utf-8") as f:
                 f.write(driver.page_source)
@@ -115,7 +115,7 @@ for page_num in range(1, 6):  # <-- change 6 to number of pages you want
                 writer.writerow([Name, Phone, Adress, website_link1, website_link2])
 
     except Exception as e:
-        print(f"❌ Error scraping page {page_num}: {e}")
+        print(f" Error scraping page {page_num}: {e}")
 
     finally:
         try:
@@ -123,4 +123,5 @@ for page_num in range(1, 6):  # <-- change 6 to number of pages you want
         except Exception:
             pass
 
-print(f"✅ Done scraping pages. Data saved to '{csv_filename}'.")
+print(f"Done scraping pages. Data saved to '{csv_filename}'.")
+
